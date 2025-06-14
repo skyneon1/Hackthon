@@ -15,8 +15,8 @@ This project include AI which help in diagnosis of patient health using ML train
 
 ### 1. Clone the Repository
 ```bash
-git clone <https://github.com/skyneon1/Hackthon.gitl>
-cd <my-app>
+git clone https://github.com/skyneon1/Hackthon.git
+cd my-app
 ```
 
 ### 2. Install Dependencies

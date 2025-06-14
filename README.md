@@ -1,7 +1,7 @@
-# Project Name
+# MedoAI
 
 ## Overview
-This project integrates a Flask backend for document analysis and a React frontend for a modern UI. It also includes a Gradio interface for image-based interactions.
+This project include AI which help in diagnosis of patient health using ML trained model and give prescription based on the data given to it.
 
 ## Prerequisites
 - Python 3.x
@@ -9,13 +9,14 @@ This project integrates a Flask backend for document analysis and a React fronte
 - Flask
 - React
 - Gradio
+- ML
 
 ## Setup Instructions
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone <https://github.com/skyneon1/Hackthon.gitl>
+cd <my-app>
 ```
 
 ### 2. Install Dependencies

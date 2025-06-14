@@ -1,0 +1,23 @@
+{
+  "user_id": "user_2difgoxw",
+  "timestamp": "2025-04-12T10:52:14.318791",
+  "conversation": [
+    {
+      "sender": "bot",
+      "message": "Hello! I'm your medical assistant. How can I help you today?",
+      "timestamp": "2025-04-12T10:51:07.908527"
+    },
+    {
+      "sender": "user",
+      "message": "[Uploaded document: report.txt]",
+      "timestamp": "2025-04-12T10:52:12.122546"
+    },
+    {
+      "sender": "bot",
+      "message": "Document Analysis for report.txt:\n\nMedical conditions mentioned: hypertension, diabetes\n",
+      "timestamp": "2025-04-12T10:52:12.122546"
+    }
+  ],
+  "medical_category": null,
+  "identified_symptoms": []
+}

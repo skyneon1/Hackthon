@@ -1,0 +1,24 @@
+Patient Medical History
+Date: 2024-03-20
+
+Symptoms:
+- Persistent headache for 3 days
+- Mild fever (38.2°C)
+- Fatigue and weakness
+- Occasional dizziness
+
+Current Medications:
+- None
+
+Previous Medical Conditions:
+- Seasonal allergies
+- Minor asthma (childhood)
+
+Family History:
+- Father: Hypertension
+- Mother: Type 2 Diabetes
+
+Questions for doctor:
+1. Could these symptoms be related to stress?
+2. Should I get any blood tests done?
+3. Are there any lifestyle changes recommended? 

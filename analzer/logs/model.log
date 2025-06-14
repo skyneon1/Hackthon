@@ -1,0 +1,451 @@
+2025-04-12 03:41:55,064 - __main__ - INFO - Generating 10000 synthetic medical data samples...
+2025-04-12 03:41:55,220 - __main__ - INFO - Synthetic data generated and saved to data/synthetic_medical_data.csv
+2025-04-12 03:41:55,220 - __main__ - INFO - Preparing dataset...
+2025-04-12 03:47:25,403 - __main__ - INFO - Preparing dataset...
+2025-04-12 03:47:30,698 - __main__ - INFO - Dataset prepared. Train size: 8000, Test size: 2000
+2025-04-12 03:47:30,698 - model - INFO - Using device: cpu
+2025-04-12 03:47:31,622 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-04-12 03:47:51,165 - __main__ - INFO - Training with 3 epochs and batch size 16
+2025-04-12 03:47:51,165 - __main__ - INFO - Starting model training...
+2025-04-12 03:47:51,165 - model - INFO - Starting training...
+2025-04-12 03:47:51,165 - model - INFO - Epoch 1/3
+2025-04-12 06:05:36,153 - model - INFO - Average training loss: 1.1593
+2025-04-12 06:10:01,598 - model - INFO - Evaluation metrics: {'loss': 6.585343986511231, 'accuracy': 0.0095, 'precision': 0.006069803529441555, 'recall': 0.0095, 'f1': 0.0073039119953222835}
+2025-04-12 06:10:02,102 - model - INFO - Model saved to models/medical_transformer.pkl
+2025-04-12 06:10:02,102 - model - INFO - Saved best model with accuracy 0.0095
+2025-04-12 06:10:02,102 - model - INFO - Epoch 2/3
+2025-04-12 07:07:28,692 - model - INFO - Average training loss: 0.3638
+2025-04-12 07:11:47,798 - model - INFO - Evaluation metrics: {'loss': 7.528807628631592, 'accuracy': 0.024, 'precision': 0.017540384615384617, 'recall': 0.024, 'f1': 0.02002372637805143}
+2025-04-12 07:11:48,409 - model - INFO - Model saved to models/medical_transformer.pkl
+2025-04-12 07:11:48,409 - model - INFO - Saved best model with accuracy 0.0240
+2025-04-12 07:11:48,409 - model - INFO - Epoch 3/3
+2025-04-12 08:09:04,320 - model - INFO - Average training loss: 0.3456
+2025-04-12 08:13:30,442 - model - INFO - Evaluation metrics: {'loss': 7.776702587127685, 'accuracy': 0.033, 'precision': 0.030826450326917252, 'recall': 0.033, 'f1': 0.031576744319703906}
+2025-04-12 08:13:31,084 - model - INFO - Model saved to models/medical_transformer.pkl
+2025-04-12 08:13:31,084 - model - INFO - Saved best model with accuracy 0.0330
+2025-04-12 08:13:31,084 - model - INFO - Training complete!
+2025-04-12 08:13:31,100 - __main__ - INFO - Model training complete! Model saved to models/medical_transformer.pkl
+2025-04-12 08:13:32,884 - __main__ - INFO - Training statistics plot saved to logs\plots\training_stats.png
+2025-04-12 08:19:14,970 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 08:19:14,973 - chatbot - INFO - Loaded model from models/medical_transformer.pkl
+2025-04-12 08:19:15,021 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-12 08:19:15,022 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 08:19:28,050 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 08:19:28] "GET / HTTP/1.1" 200 -
+2025-04-12 08:19:28,255 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 08:19:28] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-12 08:19:28,260 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 08:19:28] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-04-12 08:19:28,348 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 08:19:28] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 08:19:28,433 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 08:19:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-12 08:19:34,141 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 08:19:34] "POST /api/send_message HTTP/1.1" 200 -
+2025-04-12 08:21:15,196 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 08:21:15] "POST /api/upload_document HTTP/1.1" 200 -
+2025-04-12 08:21:50,071 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 08:21:50] "POST /api/send_message HTTP/1.1" 200 -
+2025-04-12 09:02:08,546 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:02:08] "GET / HTTP/1.1" 200 -
+2025-04-12 09:02:08,608 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:02:08] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-12 09:02:08,613 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:02:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:02:08,758 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:02:08] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:02:17,726 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:02:17] "POST /api/send_message HTTP/1.1" 200 -
+2025-04-12 09:02:19,646 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:02:19] "GET / HTTP/1.1" 200 -
+2025-04-12 09:02:19,714 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:02:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-12 09:02:19,722 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:02:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:02:19,772 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:02:19] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:02:26,225 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:02:26] "POST /api/send_message HTTP/1.1" 200 -
+2025-04-12 09:04:59,277 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:04:59] "GET / HTTP/1.1" 200 -
+2025-04-12 09:04:59,339 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:04:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-12 09:04:59,345 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:04:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:04:59,400 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:04:59] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:05:06,121 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:05:06] "POST /api/send_message HTTP/1.1" 200 -
+2025-04-12 09:06:18,053 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:18] "GET / HTTP/1.1" 200 -
+2025-04-12 09:06:18,107 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:18] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-12 09:06:18,109 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:06:18,174 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:18] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:06:20,944 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:20] "GET / HTTP/1.1" 200 -
+2025-04-12 09:06:21,023 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-12 09:06:21,027 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:06:21,058 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:21] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:06:24,595 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:24] "POST /api/send_message HTTP/1.1" 200 -
+2025-04-12 09:06:38,478 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:38] "GET / HTTP/1.1" 200 -
+2025-04-12 09:06:38,615 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-12 09:06:38,718 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:06:38,752 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:38] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:06:38,870 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-12 09:06:42,870 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:06:42] "POST /api/send_message HTTP/1.1" 200 -
+2025-04-12 09:43:19,589 - root - WARNING - PDF support not available. Install PyPDF2 for PDF processing.
+2025-04-12 09:43:21,703 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 09:43:21,712 - chatbot - INFO - Loaded model from models/medical_transformer.pkl
+2025-04-12 09:43:21,713 - __main__ - INFO - Initialized chatbot with model from models/medical_transformer.pkl
+2025-04-12 09:43:21,716 - __main__ - INFO - Starting Flask app on 0.0.0.0:5000
+2025-04-12 09:43:21,740 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.49:5000
+2025-04-12 09:43:21,741 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 09:44:41,669 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:44:41] "GET / HTTP/1.1" 200 -
+2025-04-12 09:44:41,780 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:44:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:44:42,093 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:44:42] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-12 09:44:42,408 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:44:42] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:44:42,646 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:44:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-12 09:46:01,097 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:46:01] "GET / HTTP/1.1" 200 -
+2025-04-12 09:46:01,136 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:46:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-12 09:46:01,139 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:46:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:46:01,164 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:46:01] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:47:58,536 - root - WARNING - PDF support not available. Install PyPDF2 for PDF processing.
+2025-04-12 09:48:00,411 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 09:48:00,413 - chatbot - INFO - Loaded model from models/medical_transformer.pkl
+2025-04-12 09:48:00,413 - __main__ - INFO - Initialized chatbot with model from models/medical_transformer.pkl
+2025-04-12 09:48:00,415 - __main__ - INFO - Starting Flask app on 0.0.0.0:5000
+2025-04-12 09:48:00,424 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.49:5000
+2025-04-12 09:48:00,425 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 09:48:02,557 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:02] "GET / HTTP/1.1" 200 -
+2025-04-12 09:48:02,597 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-12 09:48:02,606 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:48:02,630 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:02] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:48:03,823 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:03] "GET / HTTP/1.1" 200 -
+2025-04-12 09:48:03,870 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-12 09:48:03,874 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:48:03,909 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:03] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:48:04,739 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:04] "GET / HTTP/1.1" 200 -
+2025-04-12 09:48:04,804 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-12 09:48:04,807 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:48:04,827 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:04] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:48:12,984 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:12] "GET / HTTP/1.1" 200 -
+2025-04-12 09:48:13,039 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-12 09:48:13,073 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:48:13,123 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:48:13] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:50:18,299 - root - WARNING - PDF support not available. Install PyPDF2 for PDF processing.
+2025-04-12 09:50:19,807 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 09:50:19,810 - chatbot - INFO - Loaded model from models/medical_transformer.pkl
+2025-04-12 09:50:19,810 - __main__ - INFO - Initialized chatbot with model from models/medical_transformer.pkl
+2025-04-12 09:50:19,811 - __main__ - INFO - Starting Flask app on 127.0.0.1:5000
+2025-04-12 09:50:19,818 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-12 09:50:19,819 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 09:50:43,586 - root - WARNING - PDF support not available. Install PyPDF2 for PDF processing.
+2025-04-12 09:50:45,914 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 09:50:45,914 - chatbot - INFO - Loaded model from models/medical_transformer.pkl
+2025-04-12 09:50:45,914 - __main__ - INFO - Initialized chatbot with model from models/medical_transformer.pkl
+2025-04-12 09:50:45,914 - __main__ - INFO - Starting Flask app on 0.0.0.0:5000
+2025-04-12 09:50:45,925 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.49:5000
+2025-04-12 09:50:45,926 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 09:50:57,095 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:50:57] "GET / HTTP/1.1" 200 -
+2025-04-12 09:50:57,147 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:50:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-12 09:50:57,151 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:50:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:50:57,217 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:50:57] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:50:59,606 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:50:59] "GET / HTTP/1.1" 200 -
+2025-04-12 09:50:59,661 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:50:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-12 09:50:59,664 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:50:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:50:59,689 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:50:59] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:51:07,067 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:51:07] "POST /api/send_message HTTP/1.1" 200 -
+2025-04-12 09:51:26,864 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:51:26] "GET / HTTP/1.1" 200 -
+2025-04-12 09:51:27,071 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:51:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-12 09:51:27,157 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:51:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 09:51:27,259 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:51:27] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 09:51:27,505 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 09:51:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-12 09:56:57,901 - __main__ - INFO - Preparing dataset...
+2025-04-12 09:57:02,767 - __main__ - INFO - Dataset prepared. Train size: 800, Test size: 200
+2025-04-12 09:57:02,767 - model - INFO - Using device: cpu
+2025-04-12 09:57:03,597 - __main__ - INFO - Training with 20 epochs and batch size 16
+2025-04-12 09:57:03,598 - __main__ - INFO - Starting model training with early stopping...
+2025-04-12 09:57:03,599 - model - INFO - Starting training with early stopping (patience=5)...
+2025-04-12 09:57:03,599 - model - INFO - Epoch 1/20
+2025-04-12 10:09:01,349 - __main__ - ERROR - Error initializing model: 'model_path'
+2025-04-12 10:09:30,054 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 10:09:30,054 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 10:09:30,072 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.49:5000
+2025-04-12 10:09:30,072 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 10:09:30,080 - werkzeug - INFO -  * Restarting with stat
+2025-04-12 10:09:36,703 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 10:09:36,705 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 10:09:36,711 - werkzeug - WARNING -  * Debugger is active!
+2025-04-12 10:09:36,737 - werkzeug - INFO -  * Debugger PIN: 661-480-238
+2025-04-12 10:37:16,715 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 10:37:16,719 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 10:37:16,743 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.49:5000
+2025-04-12 10:37:16,746 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 10:37:16,749 - werkzeug - INFO -  * Restarting with stat
+2025-04-12 10:37:28,443 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 10:37:28,450 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 10:37:28,473 - werkzeug - WARNING -  * Debugger is active!
+2025-04-12 10:37:28,534 - werkzeug - INFO -  * Debugger PIN: 661-480-238
+2025-04-12 10:43:33,775 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:43:33] "GET / HTTP/1.1" 200 -
+2025-04-12 10:43:33,814 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:43:33] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-12 10:43:33,822 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:43:33] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-04-12 10:43:33,892 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:43:33] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 10:43:33,951 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:43:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-12 10:43:52,839 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:43:52] "POST /api/upload_document HTTP/1.1" 200 -
+2025-04-12 10:45:41,376 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:45:41] "POST /api/upload_document HTTP/1.1" 200 -
+2025-04-12 10:49:19,510 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 10:49:19,512 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 10:49:19,526 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.49:5000
+2025-04-12 10:49:19,526 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 10:49:19,529 - werkzeug - INFO -  * Restarting with stat
+2025-04-12 10:49:26,230 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 10:49:26,230 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 10:49:26,230 - werkzeug - WARNING -  * Debugger is active!
+2025-04-12 10:49:26,252 - werkzeug - INFO -  * Debugger PIN: 661-480-238
+2025-04-12 10:51:07,774 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:51:07] "GET / HTTP/1.1" 200 -
+2025-04-12 10:51:07,842 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:51:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-12 10:51:07,872 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:51:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 10:51:07,909 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:51:07] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 10:52:12,123 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:52:12] "POST /api/upload_document HTTP/1.1" 200 -
+2025-04-12 10:52:14,321 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:52:14] "POST /api/save_conversation HTTP/1.1" 200 -
+2025-04-12 10:54:04,383 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:54:04] "GET / HTTP/1.1" 200 -
+2025-04-12 10:54:04,430 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:54:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-12 10:54:04,437 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:54:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-04-12 10:54:04,457 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:54:04] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 10:54:19,413 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:54:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-12 10:55:24,689 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 10:55:24,689 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 10:55:24,704 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.49:5000
+2025-04-12 10:55:24,704 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 10:55:24,705 - werkzeug - INFO -  * Restarting with stat
+2025-04-12 10:55:31,232 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 10:55:31,234 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 10:55:31,234 - werkzeug - WARNING -  * Debugger is active!
+2025-04-12 10:55:31,254 - werkzeug - INFO -  * Debugger PIN: 661-480-238
+2025-04-12 10:56:13,112 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:56:13] "GET / HTTP/1.1" 200 -
+2025-04-12 10:56:13,162 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:56:13] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-04-12 10:56:13,368 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:56:13] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-04-12 10:56:13,712 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:56:13] "POST /api/start_session HTTP/1.1" 200 -
+2025-04-12 10:56:13,785 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:56:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-12 10:57:31,751 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 10:57:31,758 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 10:57:31,769 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.49:5000
+2025-04-12 10:57:31,771 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 10:57:31,773 - werkzeug - INFO -  * Restarting with stat
+2025-04-12 10:57:38,134 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 10:57:38,134 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 10:57:38,134 - werkzeug - WARNING -  * Debugger is active!
+2025-04-12 10:57:38,159 - werkzeug - INFO -  * Debugger PIN: 661-480-238
+2025-04-12 10:59:00,003 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 10:59:00] "POST /api/upload_document HTTP/1.1" 200 -
+2025-04-12 11:01:17,504 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 11:01:17] "POST /api/send_message HTTP/1.1" 200 -
+2025-04-12 11:19:31,544 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 11:19:31,544 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 11:19:31,563 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.177.44:5000
+2025-04-12 11:19:31,563 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 11:19:31,563 - werkzeug - INFO -  * Restarting with stat
+2025-04-12 11:19:38,773 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 11:19:38,774 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 11:19:38,774 - werkzeug - WARNING -  * Debugger is active!
+2025-04-12 11:19:38,793 - werkzeug - INFO -  * Debugger PIN: 137-747-159
+2025-04-12 11:19:54,915 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 11:19:54] "GET / HTTP/1.1" 200 -
+2025-04-12 11:19:56,760 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 11:19:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-12 11:21:05,677 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 11:21:05] "POST /api/upload HTTP/1.1" 200 -
+2025-04-12 11:22:35,517 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 11:22:35,517 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 11:22:35,533 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.177.44:5000
+2025-04-12 11:22:35,534 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 11:22:35,536 - werkzeug - INFO -  * Restarting with stat
+2025-04-12 11:22:42,871 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 11:22:42,873 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 11:22:42,879 - werkzeug - WARNING -  * Debugger is active!
+2025-04-12 11:22:42,895 - werkzeug - INFO -  * Debugger PIN: 137-747-159
+2025-04-12 11:23:03,468 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 11:23:03] "GET / HTTP/1.1" 200 -
+2025-04-12 11:23:13,596 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 11:23:13] "POST /api/chat HTTP/1.1" 200 -
+2025-04-12 12:00:33,829 - __main__ - ERROR - Error initializing model: Can't get attribute 'BertSdpaSelfAttention' on <module 'transformers.models.bert.modeling_bert' from 'C:\\Users\\Ghost\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\transformers\\models\\bert\\modeling_bert.py'>
+2025-04-12 12:02:37,843 - __main__ - ERROR - Error initializing model: Can't get attribute 'BertSdpaSelfAttention' on <module 'transformers.models.bert.modeling_bert' from 'C:\\Users\\Ghost\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\transformers\\models\\bert\\modeling_bert.py'>
+2025-04-12 12:16:46,914 - __main__ - ERROR - Error initializing model: Can't get attribute 'BertSdpaSelfAttention' on <module 'transformers.models.bert.modeling_bert' from 'C:\\Users\\Ghost\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\transformers\\models\\bert\\modeling_bert.py'>
+2025-04-12 12:17:13,774 - __main__ - INFO - Preparing dataset...
+2025-04-12 12:17:17,371 - __main__ - INFO - Dataset prepared. Train size: 800, Test size: 200
+2025-04-12 12:17:17,371 - model - INFO - Using device: cpu
+2025-04-12 12:17:18,310 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-04-12 12:17:37,955 - __main__ - INFO - Training with 1 epochs and batch size 32
+2025-04-12 12:17:37,955 - __main__ - INFO - Starting model training with early stopping...
+2025-04-12 12:17:42,413 - model - INFO - Starting training with early stopping (patience=10)...
+2025-04-12 12:17:42,413 - model - INFO - Epoch 1/1
+2025-04-12 12:23:41,889 - model - INFO - Average training loss: 2.2105
+2025-04-12 12:24:12,763 - model - INFO - Evaluation metrics: {'loss': 2.2310898985181535, 'accuracy': 0.09, 'precision': 0.08255602240896359, 'recall': 0.09, 'f1': 0.07076473041798384}
+2025-04-12 12:24:13,216 - model - INFO - Model saved to models/medical_transformer.pkl
+2025-04-12 12:24:13,217 - model - INFO - Saved best model with accuracy 0.0900
+2025-04-12 12:24:13,217 - model - INFO - Training complete!
+2025-04-12 12:24:13,219 - __main__ - INFO - Model training complete! Model saved to models/medical_transformer.pkl
+2025-04-12 12:24:14,238 - __main__ - INFO - Training statistics plot saved to logs\plots\training_stats.png
+2025-04-12 12:24:28,630 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 12:24:28,634 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 12:24:28,725 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.160:5000
+2025-04-12 12:24:28,725 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 12:24:28,733 - werkzeug - INFO -  * Restarting with stat
+2025-04-12 12:24:34,097 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 12:24:34,101 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 12:24:34,113 - werkzeug - WARNING -  * Debugger is active!
+2025-04-12 12:24:34,116 - werkzeug - INFO -  * Debugger PIN: 899-789-463
+2025-04-12 12:25:14,124 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 12:25:14,124 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 12:25:14,158 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.160:5000
+2025-04-12 12:25:14,159 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 12:25:14,160 - werkzeug - INFO -  * Restarting with stat
+2025-04-12 12:25:19,210 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 12:25:19,212 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 12:25:19,220 - werkzeug - WARNING -  * Debugger is active!
+2025-04-12 12:25:19,226 - werkzeug - INFO -  * Debugger PIN: 899-789-463
+2025-04-12 12:25:20,049 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 12:25:20] "GET / HTTP/1.1" 200 -
+2025-04-12 12:25:20,419 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 12:25:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-12 12:26:21,838 - __main__ - ERROR - Error extracting text from WhatsApp_Image_2025-04-12_at_10.39.11_0221beee.jpg: C:\Program Files\Tesseract-OCR\tesseract.exe is not installed or it's not in your PATH. See README file for more information.
+2025-04-12 12:26:21,838 - __main__ - ERROR - Error processing file WhatsApp_Image_2025-04-12_at_10.39.11_0221beee.jpg: Could not extract text from WhatsApp_Image_2025-04-12_at_10.39.11_0221beee.jpg
+2025-04-12 12:26:21,839 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 12:26:21] "[35m[1mPOST /api/upload HTTP/1.1[0m" 500 -
+2025-04-12 12:30:04,158 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 12:30:04,158 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 12:30:04,187 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.160:5000
+2025-04-12 12:30:04,187 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 12:30:04,188 - werkzeug - INFO -  * Restarting with stat
+2025-04-12 12:30:10,008 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 12:30:10,012 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 12:30:10,030 - werkzeug - WARNING -  * Debugger is active!
+2025-04-12 12:30:10,034 - werkzeug - INFO -  * Debugger PIN: 899-789-463
+2025-04-12 12:30:14,071 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 12:30:14] "GET / HTTP/1.1" 200 -
+2025-04-12 12:30:23,057 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 12:30:23] "POST /api/upload HTTP/1.1" 200 -
+2025-04-12 12:31:26,159 - werkzeug - INFO - 127.0.0.1 - - [12/Apr/2025 12:31:26] "POST /api/upload HTTP/1.1" 200 -
+2025-04-12 12:48:03,736 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 12:48:03,743 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 12:48:05,123 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.65:5000
+2025-04-12 12:48:05,124 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 12:48:05,127 - werkzeug - INFO -  * Restarting with stat
+2025-04-12 12:48:15,946 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 12:48:15,952 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 12:48:15,974 - werkzeug - WARNING -  * Debugger is active!
+2025-04-12 12:48:15,980 - werkzeug - INFO -  * Debugger PIN: 899-789-463
+2025-04-12 12:49:58,245 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 12:49:58,245 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 12:49:59,540 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.242.65:5000
+2025-04-12 12:49:59,540 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-12 12:49:59,552 - werkzeug - INFO -  * Restarting with stat
+2025-04-12 12:50:06,565 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-04-12 12:50:06,576 - __main__ - INFO - Model and processors initialized successfully
+2025-04-12 12:50:06,587 - werkzeug - WARNING -  * Debugger is active!
+2025-04-12 12:50:06,590 - werkzeug - INFO -  * Debugger PIN: 899-789-463
+2025-05-11 00:01:23,972 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-05-11 00:01:23,979 - __main__ - INFO - Model and processors initialized successfully
+2025-05-11 00:01:25,245 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.110:5000
+2025-05-11 00:01:25,245 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-11 00:01:25,246 - werkzeug - INFO -  * Restarting with stat
+2025-05-11 00:01:30,668 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-05-11 00:01:30,672 - __main__ - INFO - Model and processors initialized successfully
+2025-05-11 00:01:30,682 - werkzeug - WARNING -  * Debugger is active!
+2025-05-11 00:01:30,682 - werkzeug - INFO -  * Debugger PIN: 899-789-463
+2025-05-11 00:01:38,091 - werkzeug - INFO - 127.0.0.1 - - [11/May/2025 00:01:38] "GET / HTTP/1.1" 200 -
+2025-05-15 19:13:02,482 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-05-15 19:13:02,491 - __main__ - INFO - Model and processors initialized successfully
+2025-05-15 19:13:02,536 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.113:5000
+2025-05-15 19:13:02,536 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-15 19:13:02,541 - werkzeug - INFO -  * Restarting with stat
+2025-05-15 19:13:07,806 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-05-15 19:13:07,808 - __main__ - INFO - Model and processors initialized successfully
+2025-05-15 19:13:07,816 - werkzeug - WARNING -  * Debugger is active!
+2025-05-15 19:13:07,821 - werkzeug - INFO -  * Debugger PIN: 899-789-463
+2025-05-15 19:13:09,063 - werkzeug - INFO - 127.0.0.1 - - [15/May/2025 19:13:09] "GET / HTTP/1.1" 200 -
+2025-05-15 19:13:09,351 - werkzeug - INFO - 127.0.0.1 - - [15/May/2025 19:13:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-15 19:13:42,856 - werkzeug - INFO - 127.0.0.1 - - [15/May/2025 19:13:42] "POST /api/upload HTTP/1.1" 200 -
+2025-05-15 19:15:05,928 - werkzeug - INFO - 127.0.0.1 - - [15/May/2025 19:15:05] "GET / HTTP/1.1" 200 -
+2025-05-15 19:15:15,458 - werkzeug - INFO - 127.0.0.1 - - [15/May/2025 19:15:15] "POST /api/upload HTTP/1.1" 200 -
+2025-05-28 12:47:57,049 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-05-28 12:47:57,061 - __main__ - INFO - Model and processors initialized successfully
+2025-05-28 12:47:58,433 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.104:5000
+2025-05-28 12:47:58,435 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-28 12:47:58,445 - werkzeug - INFO -  * Restarting with stat
+2025-05-28 12:48:07,067 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-05-28 12:48:07,074 - __main__ - INFO - Model and processors initialized successfully
+2025-05-28 12:48:07,097 - werkzeug - WARNING -  * Debugger is active!
+2025-05-28 12:48:07,109 - werkzeug - INFO -  * Debugger PIN: 899-789-463
+2025-05-28 12:48:34,776 - werkzeug - INFO - 127.0.0.1 - - [28/May/2025 12:48:34] "GET / HTTP/1.1" 200 -
+2025-05-28 12:48:35,034 - werkzeug - INFO - 127.0.0.1 - - [28/May/2025 12:48:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-28 12:51:11,388 - werkzeug - INFO - 127.0.0.1 - - [28/May/2025 12:51:11] "POST /api/upload HTTP/1.1" 200 -
+2025-05-28 12:51:40,692 - werkzeug - INFO - 127.0.0.1 - - [28/May/2025 12:51:40] "POST /api/upload HTTP/1.1" 200 -
+2025-05-29 23:55:55,078 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-05-29 23:55:55,088 - __main__ - INFO - Model and processors initialized successfully
+2025-05-29 23:55:56,379 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.103:5000
+2025-05-29 23:55:56,379 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-29 23:55:56,379 - werkzeug - INFO -  * Restarting with stat
+2025-05-29 23:56:02,606 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-05-29 23:56:02,625 - __main__ - INFO - Model and processors initialized successfully
+2025-05-29 23:56:02,636 - werkzeug - WARNING -  * Debugger is active!
+2025-05-29 23:56:02,640 - werkzeug - INFO -  * Debugger PIN: 899-789-463
+2025-05-30 09:17:54,164 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-05-30 09:17:54,166 - __main__ - INFO - Model and processors initialized successfully
+2025-05-30 09:17:55,719 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.35.65:5000
+2025-05-30 09:17:55,719 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-30 09:17:55,726 - werkzeug - INFO -  * Restarting with stat
+2025-05-30 09:18:05,327 - model - INFO - Model loaded from models/medical_transformer.pkl
+2025-05-30 09:18:05,337 - __main__ - INFO - Model and processors initialized successfully
+2025-05-30 09:18:05,359 - werkzeug - WARNING -  * Debugger is active!
+2025-05-30 09:18:05,391 - werkzeug - INFO -  * Debugger PIN: 899-789-463
+2025-05-30 09:18:07,493 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:18:07] "GET / HTTP/1.1" 200 -
+2025-05-30 09:18:07,714 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:18:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-30 09:18:22,783 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:18:22] "POST /api/upload HTTP/1.1" 200 -
+2025-05-30 09:18:31,721 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:18:31] "GET / HTTP/1.1" 200 -
+2025-05-30 09:19:23,271 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:19:23] "GET / HTTP/1.1" 200 -
+2025-05-30 09:19:23,535 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:19:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-30 09:33:58,395 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:33:58] "GET / HTTP/1.1" 200 -
+2025-05-30 09:34:48,841 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:34:48] "POST /api/chat HTTP/1.1" 200 -
+2025-05-30 09:35:32,821 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:35:32] "POST /api/chat HTTP/1.1" 200 -
+2025-05-30 09:35:58,776 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:35:58] "POST /api/chat HTTP/1.1" 200 -
+2025-05-30 09:40:38,297 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:40:38] "GET / HTTP/1.1" 200 -
+2025-05-30 09:41:07,046 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:41:07] "POST /api/chat HTTP/1.1" 200 -
+2025-05-30 09:43:28,993 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:43:28] "POST /api/upload HTTP/1.1" 200 -
+2025-05-30 09:44:01,835 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:44:01] "POST /api/chat HTTP/1.1" 200 -
+2025-05-30 09:44:35,093 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:44:35] "GET / HTTP/1.1" 200 -
+2025-05-30 09:58:03,006 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:58:03] "GET / HTTP/1.1" 200 -
+2025-05-30 09:58:09,210 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:58:09] "GET / HTTP/1.1" 200 -
+2025-05-30 09:58:58,391 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 09:58:58] "GET / HTTP/1.1" 200 -
+2025-05-30 10:09:21,530 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 10:09:21] "GET / HTTP/1.1" 200 -
+2025-05-30 10:09:24,036 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 10:09:24] "GET / HTTP/1.1" 200 -
+2025-05-30 10:09:33,299 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 10:09:33] "GET / HTTP/1.1" 200 -
+2025-05-30 10:09:36,342 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 10:09:36] "GET / HTTP/1.1" 200 -
+2025-05-30 10:09:44,767 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 10:09:44] "GET / HTTP/1.1" 200 -
+2025-05-30 10:09:48,558 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 10:09:48] "GET / HTTP/1.1" 200 -
+2025-05-30 10:42:40,961 - werkzeug - INFO - 127.0.0.1 - - [30/May/2025 10:42:40] "POST /api/upload HTTP/1.1" 200 -

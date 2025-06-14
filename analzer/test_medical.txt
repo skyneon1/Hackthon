@@ -1,0 +1,24 @@
+Medical Report
+Date: 2024-03-21
+
+Patient Symptoms:
+- Frequent headaches (3-4 times per week)
+- Dizziness when standing up quickly
+- Mild nausea in the mornings
+- Fatigue throughout the day
+
+Vital Signs:
+- Blood Pressure: 135/85
+- Heart Rate: 82 bpm
+- Temperature: 37.2°C
+
+Current Medications:
+- None
+
+Medical History:
+- Seasonal allergies
+- Minor concussion (2 years ago)
+
+Family History:
+- Father: Hypertension
+- Mother: Migraine 

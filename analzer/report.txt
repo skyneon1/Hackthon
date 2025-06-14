@@ -1,0 +1,46 @@
+Patient Name: Ramesh Kapoor
+Patient ID: RK2034
+Age: 55
+Sex: Male
+Date: 2025-04-12
+Consultant: Dr. Anita Deshmukh
+Department: Endocrinology
+
+--------------------------
+Lab Test Results:
+--------------------------
+Fasting Blood Sugar (FBS): 162 mg/dL
+Postprandial Blood Sugar (PPBS): 224 mg/dL
+HbA1c: 8.2%
+Serum Creatinine: 1.1 mg/dL
+Blood Pressure: 138/90 mmHg
+BMI: 27.4 (Overweight)
+Cholesterol: 210 mg/dL
+
+--------------------------
+Diagnosis:
+--------------------------
+- Type 2 Diabetes Mellitus (uncontrolled)
+- Early-stage hypertension
+- Mild hypercholesterolemia
+
+--------------------------
+Medications Prescribed:
+--------------------------
+1. Metformin 500mg - Twice daily after meals
+2. Telmisartan 20mg - Once daily in the morning
+3. Atorvastatin 10mg - Once daily at night
+4. Vitamin D3 - Once a week
+
+--------------------------
+Doctor's Notes:
+--------------------------
+- Patient advised to maintain a diabetic diet (low sugar, low carb)
+- 30 minutes of physical activity recommended daily
+- Check blood sugar levels every morning (fasting)
+- Review in 30 days with repeat HbA1c and lipid profile
+
+--------------------------
+Follow-Up:
+--------------------------
+Next appointment
